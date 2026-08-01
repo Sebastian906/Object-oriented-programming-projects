@@ -21,7 +21,7 @@ Proyecto desarrollado como parte del curso de Programacion Orientada a Objetos. 
 
 El Sistema de Gestion de Biblioteca es una aplicacion de escritorio desarrollada en Java que permite administrar los recursos de una biblioteca de forma digital. El sistema ofrece dos modos de interaccion: una interfaz basada en consola y una interfaz grafica desarrollada con Swing.
 
-El sistema esta disenado para resolver las operaciones基本icas de cualquier biblioteca: registrar libros en un catalogo, administrar usuarios autorizados y controlar los prestamos de ejemplares. Cada operacion incluye validaciones para garantizar la integridad de los datos y un manejo adecuado de errores.
+El sistema esta disenado para resolver las operaciones básicas de cualquier biblioteca: registrar libros en un catalogo, administrar usuarios autorizados y controlar los prestamos de ejemplares. Cada operacion incluye validaciones para garantizar la integridad de los datos y un manejo adecuado de errores.
 
 ### Funcionalidades Principales
 
@@ -110,17 +110,17 @@ El proyecto implementa el patron de arquitectura **MVC (Modelo-Vista-Controlador
 
 ### Descripcion de Capas
 
-**Modelo (models/**)**: Contiene las entidades que representan los objetos del dominio (Libro, Usuario, Prestamo) y la clase Biblioteca que centraliza la logica de negocio y las colecciones de datos. Las entidades encapsulan sus atributos y exponen comportamientos a traves de metodos.
+**Modelo (models/**): Contiene las entidades que representan los objetos del dominio (Libro, Usuario, Prestamo) y la clase Biblioteca que centraliza la logica de negocio y las colecciones de datos. Las entidades encapsulan sus atributos y exponen comportamientos a traves de metodos.
 
-**Vista (view/**)**: Presenta la informacion al usuario y captura sus entradas. BibliotecaVista funciona mediante menus de consola, mientras que BibliotecaVistaGUI ofrece una interfaz grafica con pestanas, tablas y formularios. Ambas vistas implementan la misma funcionalidad pero con diferentes tecnologias de presentacion.
+**Vista (view/**): Presenta la informacion al usuario y captura sus entradas. BibliotecaVista funciona mediante menus de consola, mientras que BibliotecaVistaGUI ofrece una interfaz grafica con pestanas, tablas y formularios. Ambas vistas implementan la misma funcionalidad pero con diferentes tecnologias de presentacion.
 
-**Controlador (controller/**)**: BibliotecaController actua como intermediario entre el modelo y la vista. Recibe las peticiones del usuario a traves de la vista, invoca las operaciones correspondientes en el modelo y devuelve los resultados para su presentacion.
+**Controlador (controller/**): BibliotecaController actua como intermediario entre el modelo y la vista. Recibe las peticiones del usuario a traves de la vista, invoca las operaciones correspondientes en el modelo y devuelve los resultados para su presentacion.
 
-**Servicios (service/**)**: Proporcionan funcionalidades reutilizables como la generacion secuencial de identificadores y la validacion de datos de entrada.
+**Servicios (service/**): Proporcionan funcionalidades reutilizables como la generacion secuencial de identificadores y la validacion de datos de entrada.
 
-**Excepciones (exceptions/**)**: Definen una jerarquia de errores especificos del dominio que permiten un manejo preciso de las situaciones excepcionales.
+**Excepciones (exceptions/**): Definen una jerarquia de errores especificos del dominio que permiten un manejo preciso de las situaciones excepcionales.
 
-**Utilidades (utils/**)**: Contienen metodos estaticos para operaciones comunes como entrada/salida por consola y formateo de datos.
+**Utilidades (utils/**): Contienen metodos estaticos para operaciones comunes como entrada/salida por consola y formateo de datos.
 
 ### Flujo de una Operacion
 
